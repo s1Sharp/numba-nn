@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  app:
+    build: ./
+    container_name: s1Sharp_cnn_cuda
+    ports:
+      - 2223:22
+    restart: on-failure
+    command: bash -c "python3 nn.py >&1"
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            device_ids: ['0'] # can change if have multi devices, or change to "count: 1" if need any gpu
+            capabilities: [gpu]
