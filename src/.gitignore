@@ -1,0 +1,6 @@
+/env
+/.vscode
+/fashion_dataset
+/mnist_dataset
+/weights
+__pycache__
