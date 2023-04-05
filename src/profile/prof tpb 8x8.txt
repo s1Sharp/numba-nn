@@ -1,0 +1,29 @@
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   33.89%  1.2463ms         7  178.04us     737ns  1.1007ms  [CUDA memcpy HtoD]
+                   31.01%  1.1403ms         1  1.1403ms  1.1403ms  1.1403ms  _ZN6cudapy12cuda_kernels20feedforward_step_241B96cw51cXTLSUwv1kAPW1tQPAP9CY9GJAHUqIFJIBltW60OjnB1KwUDHQV1kNNAcQ_2fkQgNFHeY_2fJCGgXiDPuFYTAA_3d_3dE5ArrayIdLi2E1F7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE
+                   27.58%  1.0144ms         1  1.0144ms  1.0144ms  1.0144ms  _ZN6cudapy12cuda_kernels11matmul_2412B96cw51cXTLSUwv1kAPW1tQPAP9CY9GJAHUqIFJIBltW60OjnB1KwUDHQV1kNNAcQ_2fkQgNFHeY_2fJCGgXiDPuFYTAA_3d_3dE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE
+                    2.67%  98.292us         1  98.292us  98.292us  98.292us  _ZN6cudapy12cuda_kernels20feedforward_step_244B96cw51cXTLSUwv1kAPW1tQPAP9CY9GJAHUqIFJIBltW60OjnB1KwUDHQV1kNNAcQ_2fkQgNFHeY_2fJCGgXiDPuFYTAA_3d_3dE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE
+                    2.03%  74.663us         4  18.665us  2.2090us  65.891us  _ZN6cudapy12cuda_kernels8add_2411B96cw51cXTLSUwv1kAPW1tQPAP9CY9GJAHUqIFJIBltW60OjnB1KwUDHQV1kNNAcQ_2fkQgNFHeY_2fJCGgXiDPuFYTAA_3d_3dE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE
+                    1.26%  46.393us         2  23.196us  22.124us  24.269us  _ZN6cudapy12cuda_kernels13sum_cols_2410B96cw51cXTLSUwv1kAPW1tQPAP9CY9GJAHUqIFJIBltW60OjnB1KwUDHQV1kNNAcQ_2fkQgNFHeY_2fJCGgXiDPuFYTAA_3d_3dE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE
+                    0.95%  34.995us         2  17.497us  9.6690us  25.326us  _ZN6cudapy12cuda_kernels12matmul_T_247B96cw51cXTLSUwv1kAPW1tQPAP9CY9GJAHUqIFJIBltW60OjnB1KwUDHQV1kNNAcQ_2fkQgNFHeY_2fJCGgXiDPuFYTAA_3d_3dE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE
+                    0.47%  17.225us         2  8.6120us  3.6820us  13.543us  _ZN6cudapy12cuda_kernels12gradient_248B96cw51cXTLSUwv1kAPW1tQPAP9CY9GJAHUqIFJIBltW60OjnB1KwUDHQV1kNNAcQ_2fkQgNFHeY_2fJCGgXiDPuFYTAA_3d_3dE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedEd5ArrayIdLi2E1C7mutable7alignedE
+                    0.09%  3.4580us         1  3.4580us  3.4580us  3.4580us  _ZN6cudapy12cuda_kernels12subtract_246B96cw51cXTLSUwv1kAPW1tQPAP9CY9GJAHUqIFJIBltW60OjnB1KwUDHQV1kNNAcQ_2fkQgNFHeY_2fJCGgXiDPuFYTAA_3d_3dE5ArrayIdLi2E1F7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE
+                    0.04%  1.5690us         1  1.5690us  1.5690us  1.5690us  [CUDA memcpy DtoH]
+      API calls:   65.94%  373.84ms         1  373.84ms  373.84ms  373.84ms  cuDevicePrimaryCtxRetain
+                   31.11%  176.40ms         8  22.050ms  5.9640ms  109.68ms  cuLinkAddData
+                    0.80%  4.5149ms         8  564.36us  344.50us  946.40us  cuModuleLoadDataEx
+                    0.78%  4.4311ms         7  633.01us  35.800us  2.1431ms  cuMemcpyHtoD
+                    0.38%  2.1559ms        11  195.99us  2.8000us  1.0631ms  cuCtxSynchronize
+                    0.32%  1.8055ms         8  225.69us  181.60us  279.30us  cuLinkComplete
+                    0.26%  1.4495ms        17  85.264us  9.3000us  430.30us  cuMemAlloc
+                    0.13%  717.50us         8  89.687us  82.300us  102.60us  cuLinkCreate
+                    0.11%  627.30us        14  44.807us  21.700us  80.500us  cuLaunchKernel
+                    0.08%  429.00us        11  39.000us  4.4000us  344.30us  cuMemFree
+                    0.04%  215.00us       392     548ns     200ns  20.600us  cuGetProcAddress
+                    0.02%  104.70us        80  1.3080us     400ns  3.6000us  cuCtxGetCurrent
+                    0.01%  65.000us        78     833ns     400ns  9.7000us  cuCtxGetDevice
+                    0.01%  64.700us         1  64.700us  64.700us  64.700us  cuMemcpyDtoH
+                    0.01%  32.000us       104     307ns     200ns  1.5000us  cuDeviceGetAttribute
+                    0.00%  26.000us         8  3.2500us  1.7000us  10.100us  cuModuleGetFunction
+                    0.00%  25.900us        40     647ns     400ns  1.6000us  cuFuncGetAttribute
+                    0.00%  24.900us         8  3.1120us  2.3000us  3.8000us  cuLinkDestroy

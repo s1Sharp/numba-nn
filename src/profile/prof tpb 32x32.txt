@@ -1,0 +1,38 @@
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   48.84%  4.79634s       601  7.9806ms  266.00us  13.200ms  _ZN6cudapy12cuda_kernels21make_feedforward_step12_3clocals_3e21_feedforward_step_241B96cw51cXTLSUwv1kAPW1tQPAP9CY9GJAHUqIFJIBltW60OjnB1KwUDHQV1kNNAcQ_2fkQgNFHeY_2fJCGgXiDPuFYTAA_3d_3dE5ArrayIdLi2E1F7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE
+                   40.61%  3.98753s       600  6.6459ms  4.4393ms  16.199ms  _ZN6cudapy12cuda_kernels11matmul_2413B96cw51cXTLSUwv1kAPW1tQPAP9CY9GJAHUqIFJIBltW60OjnB1KwUDHQV1kNNAcQ_2fkQgNFHeY_2fJCGgXiDPuFYTAA_3d_3dE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE
+                    4.59%  450.96ms      2400  187.90us  3.7780us  2.9725ms  _ZN6cudapy12cuda_kernels8add_2412B96cw51cXTLSUwv1kAPW1tQPAP9CY9GJAHUqIFJIBltW60OjnB1KwUDHQV1kNNAcQ_2fkQgNFHeY_2fJCGgXiDPuFYTAA_3d_3dE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE
+                    2.19%  215.43ms      1805  119.35us     801ns  406.58us  [CUDA memcpy HtoD]
+                    1.93%  189.36ms       601  315.07us  105.34us  726.46us  _ZN6cudapy12cuda_kernels21make_feedforward_step12_3clocals_3e21_feedforward_step_244B96cw51cXTLSUwv1kAPW1tQPAP9CY9GJAHUqIFJIBltW60OjnB1KwUDHQV1kNNAcQ_2fkQgNFHeY_2fJCGgXiDPuFYTAA_3d_3dE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE
+                    0.65%  63.804ms      1200  53.170us  39.285us  411.19us  _ZN6cudapy12cuda_kernels13sum_cols_2411B96cw51cXTLSUwv1kAPW1tQPAP9CY9GJAHUqIFJIBltW60OjnB1KwUDHQV1kNNAcQ_2fkQgNFHeY_2fJCGgXiDPuFYTAA_3d_3dE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE
+                    0.58%  57.032ms      1200  47.527us  20.651us  462.26us  _ZN6cudapy12cuda_kernels12matmul_T_248B96cw51cXTLSUwv1kAPW1tQPAP9CY9GJAHUqIFJIBltW60OjnB1KwUDHQV1kNNAcQ_2fkQgNFHeY_2fJCGgXiDPuFYTAA_3d_3dE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE
+                    0.51%  50.318ms      1200  41.931us  5.6350us  413.43us  _ZN6cudapy12cuda_kernels13make_gradient12_3clocals_3e13_gradient_249B96cw51cXTLSUwv1kAPW1tQPAP9CY9GJAHUqIFJIBltW60OjnB1KwUDHQV1kNNAcQ_2fkQgNFHeY_2fJCGgXiDPuFYTAA_3d_3dE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedEd5ArrayIdLi2E1C7mutable7alignedE
+                    0.06%  5.8064ms       600  9.6770us  4.2580us  33.938us  _ZN6cudapy12cuda_kernels12subtract_247B96cw51cXTLSUwv1kAPW1tQPAP9CY9GJAHUqIFJIBltW60OjnB1KwUDHQV1kNNAcQ_2fkQgNFHeY_2fJCGgXiDPuFYTAA_3d_3dE5ArrayIdLi2E1F7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE
+                    0.03%  3.0567ms       601  5.0860us  1.3440us  36.275us  [CUDA memcpy DtoH]
+                    0.00%  18.281us         1  18.281us  18.281us  18.281us  _ZN6cudapy12cuda_kernels11softmax_246B96cw51cXTLSUwv1kAPW1tQPAP9CY9GJAHUqIFJIBltW60OjnB1KwUDHQV1kNNAcQ_2fkQgNFHeY_2fJCGgXiDPuFYTAA_3d_3dE5ArrayIdLi2E1C7mutable7alignedE5ArrayIdLi2E1C7mutable7alignedE
+      API calls:   67.37%  10.5479s      6602  1.5977ms  2.1000us  37.136ms  cuCtxSynchronize
+                    7.78%  1.21820s      7799  156.20us  3.3000us  67.747ms  cuMemFree
+                    6.93%  1.08499s      8403  129.12us  20.600us  29.527ms  cuLaunchKernel
+                    5.39%  844.62ms      7808  108.17us  4.9000us  43.836ms  cuMemAlloc
+                    2.16%  338.06ms     31842  10.616us     300ns  7.6175ms  cuCtxGetCurrent
+                    0.38%  59.524ms         9  6.6138ms  962.60us  47.398ms  cuLinkAddData
+                    0.22%  35.051ms     31840  1.1000us     300ns  1.5070ms  cuCtxGetDevice
+                    0.05%  7.5372ms         9  837.47us  696.40us  1.1971ms  cuModuleLoadDataEx
+                    0.02%  3.5540ms         9  394.89us  186.90us  669.20us  cuLinkComplete
+                    0.00%  464.40us       392  1.1840us     300ns  82.100us  cuGetProcAddress
+                    0.00%  95.800us         9  10.644us  2.1000us  61.800us  cuModuleGetFunction
+                    0.00%  50.800us         9  5.6440us  2.3000us  13.400us  cuLinkDestroy
+                    0.00%  40.200us        45     893ns     400ns  2.5000us  cuFuncGetAttribute
+                    0.00%  28.900us         1  28.900us  28.900us  28.900us  cuMemGetInfo
+                    0.00%  14.900us         1  14.900us  14.900us  14.900us  cudaRuntimeGetVersion
+                    0.00%  9.2000us         3  3.0660us     700ns  6.8000us  cuDeviceGetCount
+                    0.00%  8.2000us         1  8.2000us  8.2000us  8.2000us  cuProfilerStart
+                    0.00%  8.1000us         1  8.1000us  8.1000us  8.1000us  cuCtxPushCurrent
+                    0.00%  7.8000us         1  7.8000us  7.8000us  7.8000us  cuInit
+                    0.00%  4.2000us         2  2.1000us  1.4000us  2.8000us  cuDeviceGetName
+                    0.00%  3.2000us         3  1.0660us     900ns  1.3000us  cuDeviceGet
+                    0.00%  1.6000us         1  1.6000us  1.6000us  1.6000us  фe|ќ
+                    0.00%     800ns         1     800ns     800ns     800ns  cuDriverGetVersion
+                    0.00%     800ns         1     800ns     800ns     800ns  cuDeviceTotalMem
+                    0.00%     800ns         1     800ns     800ns     800ns  cuDeviceGetLuid
+                    0.00%     500ns         1     500ns     500ns     500ns  cuDeviceGetUuid
